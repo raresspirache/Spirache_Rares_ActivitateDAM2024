@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaboratorDAM">
         <activity
+            android:name=".ListaRezervari"
+            android:exported="false" />
+        <activity
             android:name=".FormularActivitate"
             android:exported="false" />
         <activity
