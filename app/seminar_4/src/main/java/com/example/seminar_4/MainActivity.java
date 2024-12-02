@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -52,6 +53,41 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        Button imagini = findViewById(R.id.button3);
+        imagini.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), ListaImagini.class);
+                startActivity(it);
+
+            }
+        });
+
+        Button json = findViewById(R.id.button4);
+        json.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), interactiuneJson.class);
+                startActivity(it);
+
+            }
+        });
+
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==200)
+        {
+            if(resultCode==RESULT_OK)
+            {
+                Rezervare r=data.getParcelableExtra("rezervare");
+                rezervari.add(r);
+            }
+        }
     }
 
 

@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaboratorDAM">
         <activity
+            android:name=".interactiuneJson"
+            android:exported="false" />
+        <activity
             android:name=".WebViewActiv"
             android:exported="false" />
         <activity
