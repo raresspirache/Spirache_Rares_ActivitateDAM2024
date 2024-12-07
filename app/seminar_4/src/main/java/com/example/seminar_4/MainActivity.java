@@ -74,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnFav=findViewById(R.id.btnFav);
+        btnFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(it);
+            }
+        });
+
 
     }
 

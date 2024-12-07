@@ -3,7 +3,16 @@ package com.example.seminar_4;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+import org.jetbrains.annotations.NotNull;
+
+@Entity(tableName = "Rezervari")
 public class Rezervare implements Parcelable {
+
+    @PrimaryKey
+    @NotNull
     private int id;
     private String activitate;
     private String nume_client;
