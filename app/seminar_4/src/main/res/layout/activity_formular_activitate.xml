@@ -16,17 +16,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ID: "
-            android:textSize="24dp">
-        </TextView>
+            android:textSize="24dp"></TextView>
 
         <EditText
-            android:id="@+id/idET"
+            android:id="@+id/id"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="ID"
-            android:textSize="24dp"
-            android:layout_weight="1">
-        </EditText>
+            android:textSize="24dp"></EditText>
     </LinearLayout>
 
     <LinearLayout
@@ -38,17 +36,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Activitate: "
-            android:textSize="24dp">
-        </TextView>
+            android:textSize="24dp"></TextView>
 
         <EditText
-            android:id="@+id/activitateET"
+            android:id="@+id/activitate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="Activitate"
-            android:textSize="24dp"
-            android:layout_weight="1">
-        </EditText>
+            android:textSize="24dp"></EditText>
     </LinearLayout>
 
     <LinearLayout
@@ -59,18 +55,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nume: "
-            android:textSize="24dp">
-        </TextView>
+            android:text="Nume client: "
+            android:textSize="24dp"></TextView>
 
         <EditText
-            android:id="@+id/numeET"
+            android:id="@+id/nume"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Nume"
-            android:textSize="24dp"
-            android:layout_weight="1">
-        </EditText>
+            android:layout_weight="1"
+            android:hint="Nume client"
+            android:textSize="24dp"></EditText>
     </LinearLayout>
 
     <LinearLayout
@@ -78,24 +72,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/activacb"
-            android:textSize="24dp"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activa?" />
+            android:text="Stare: "
+            android:textSize="24dp"></TextView>
+
+        <CheckBox
+            android:id="@+id/activa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activa?"
+            android:textSize="24dp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ID: "
-        android:textSize="24dp"></TextView>
+        android:text="Salveaza" />
 
 </LinearLayout>

@@ -9,6 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seminar_2">
         <activity
+            android:name=".interactiuneJson"
+            android:exported="false" />
+        <activity
+            android:name=".WebViewActiv"
+            android:exported="false" />
+        <activity
+            android:name=".ListaImagini"
+            android:exported="false" />
+        <activity
+            android:name=".AdapterRezervare"
+            android:exported="false" />
+        <activity
             android:name=".FormularActivitate"
             android:exported="false" />
         <activity

@@ -1,7 +1,9 @@
 package com.example.seminar4;
 
-public class Rezervare
-{
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Rezervare implements Parcelable {
     private int id;
     private String activitate;
     private String nume_client;
@@ -12,6 +14,13 @@ public class Rezervare
         this.stare = stare;
         this.nume_client = nume_client;
         this.id = id;
+    }
+
+    protected Rezervare(Parcel in) {
+        id = in.readInt();
+        activitate = in.readString();
+        nume_client = in.readString();
+        stare = in.readByte() != 0;
     }
 
     public int getId() {
@@ -52,10 +61,33 @@ public class Rezervare
         sb.append("id=").append(id);
         sb.append(", activitate='").append(activitate).append('\'');
         sb.append(", nume_client='").append(nume_client).append('\'');
-        sb.append(", stare='").append(stare).append('\'');
+        sb.append(", stare=").append(stare);
         sb.append('}');
         return sb.toString();
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(activitate);
+        dest.writeString(nume_client);
+        dest.writeByte((byte) (stare ? 1 : 0));
+    }
+
+    public static final Creator<Rezervare> CREATOR = new Creator<Rezervare>() {
+        @Override
+        public Rezervare createFromParcel(Parcel in) {
+            return new Rezervare(in);
+        }
+
+        @Override
+        public Rezervare[] newArray(int size) {
+            return new Rezervare[size];
+        }
+    };
 }
