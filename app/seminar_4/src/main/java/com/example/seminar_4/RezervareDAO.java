@@ -12,7 +12,7 @@ public interface RezervareDAO
     void insertRezervare(Rezervare rezervare);
 
     @Query("SELECT * FROM Rezervari")
-    List<Rezervare> getAllSerpi();
+    List<Rezervare> getAllRezervari();
 
     @Delete
     void deleteRezervare(Rezervare rezervare);

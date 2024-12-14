@@ -8,7 +8,7 @@
     android:background="#f5f5f5">
 
     <TextView
-        android:id="@+id/idTV"
+        android:id="@+id/specieTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -28,14 +28,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/activitateTV"
+            android:id="@+id/lungime_medieTV"
             android:textSize="16sp"
             android:textColor="#333333"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/numeTV"
+            android:id="@+id/culoareTV"
             android:textSize="16sp"
             android:textColor="#333333"/>
 
@@ -43,6 +43,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:id="@+id/stareCB"/>
+            android:id="@+id/veninosCB"/>
     </LinearLayout>
 </LinearLayout>
