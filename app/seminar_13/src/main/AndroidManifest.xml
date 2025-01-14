@@ -9,25 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaboratorDAM">
         <activity
-            android:name=".Firebase"
+            android:name=".FavoriteActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityFavorite"
-            android:exported="false" />
-        <activity
-            android:name=".interactiuneJson"
-            android:exported="false" />
-        <activity
-            android:name=".WebViewActiv"
-            android:exported="false" />
-        <activity
-            android:name=".ListaImagini"
-            android:exported="false" />
-        <activity
-            android:name=".ListaRezervari"
-            android:exported="false" />
-        <activity
-            android:name=".FormularActivitate"
+            android:name=".FormularAdaugare"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

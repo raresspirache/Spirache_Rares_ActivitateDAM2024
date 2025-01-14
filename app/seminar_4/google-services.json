@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434163374576",
+    "project_id": "laboratordam",
+    "storage_bucket": "laboratordam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434163374576:android:b38e7366ba98361fb56535",
+        "android_client_info": {
+          "package_name": "com.example.seminar_4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBICEOzfo6R3jdtZOGZ4bpXu0HZUpwMms8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,18 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".FormularActivitate">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ID: "
-            android:textSize="24dp"></TextView>
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:id="@+id/id"
@@ -24,19 +27,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="ID"
-            android:textSize="24dp"></EditText>
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Activitate: "
-            android:textSize="24dp"></TextView>
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:id="@+id/activitate"
@@ -44,19 +49,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Activitate"
-            android:textSize="24dp"></EditText>
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nume client: "
-            android:textSize="24dp"></TextView>
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp" />
 
         <EditText
             android:id="@+id/nume"
@@ -64,32 +71,43 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Nume client"
-            android:textSize="24dp"></EditText>
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stare: "
-            android:textSize="24dp"></TextView>
+            android:textSize="24sp"
+            android:layout_marginEnd="8dp" />
 
         <CheckBox
             android:id="@+id/activa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activa?"
-            android:textSize="24dp" />
+            android:text="Activa ?"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Salveaza" />
+        android:text="Salvează"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
 
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponibil Online"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
