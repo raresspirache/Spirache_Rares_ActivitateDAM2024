@@ -121,6 +121,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnDesenare=findViewById(R.id.button6);
+        btnDesenare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it=new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(it);
+            }
+        });
+
+
 
     }
 
